@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-
+// import { Route,Routes, Link } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      Duoi day la link di cac trang khac:
+      <br />
+      <a href="/">Page 1</a>
+      <br />
+      <a href="/">Page 2</a>
+      <br />
+      <a href="/">Page 3</a>
+      <br />
+      <a href="/">Page 4</a>
+
     </div>
   );
 }
