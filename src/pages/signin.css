@@ -49,6 +49,7 @@ main .right{
     font-family: TwitterChirpExtendedHeavy, Verdana, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-weight: bold;
     padding: 16px;
+    text-align: left;
 }
 
 .header5-text{
