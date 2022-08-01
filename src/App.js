@@ -1,19 +1,19 @@
 import './App.css';
-// import { Route,Routes, Link } from 'react-router-dom';
+import { Route,Routes } from 'react-router-dom';
+import NavPage from './pages/navpage';
+import SignIn from './pages/signin';
+import SignInForm from './component/signinform';
 function App() {
   return (
+    
     <div className="App">
-      Duoi day la link di cac trang khac:
-      <br />
-      <a href="/">Page 1</a>
-      <br />
-      <a href="/">Page 2</a>
-      <br />
-      <a href="/">Page 3</a>
-      <br />
-      <a href="/">Page 4</a>
-
+      <Routes>
+      <Route path='/navpage' element= {<NavPage/>}></Route>
+      <Route path='/form' element= {<SignInForm/>}></Route>
+      <Route path='/' element= {<SignIn/>}></Route>
+      </Routes>
     </div>
+   
   );
 }
 
