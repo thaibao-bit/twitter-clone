@@ -3,13 +3,13 @@ const NavPage = () => {
     return <div className="container">
 Duoi day la link di cac trang khac:
       <br />
-      <Link to='/'>Sign In</Link>
+      <Link to='/'>List Pages</Link>
       <br />
       <Link to='/form'>Form</Link>
       <br />
-      <Link to='/'>Page 3</Link>
+      <Link to='/signin'>Sign In</Link>
       <br />
-      <Link to='/'>Page 4</Link>
+      <Link to='/home'>Home</Link>
   </div>
 }
 

@@ -8,13 +8,13 @@
 }
 
 
-main {
+.main {
     
     display: flex;
     
 }
 
-main .left{
+.main .left{
     background: url(./lohp_en_1302x955.png);
     background-size: contain;
     width: 54%;
@@ -28,7 +28,7 @@ main .left{
     width: 38%;
 }
 
-main .right{
+.main .right{
     width: 46%;
     height: calc(100vh - 54px);
     display: flex;
@@ -106,13 +106,18 @@ main .right{
 .divider-or {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 14px;
     width: 320px;
 }
+
+.divider-text{
+    margin: 0px 4px;
+}
 .divider-side {
-    align-items: stretch;
-    border: 0 solid black;
-    height: 1px;
+    border: 1px outset rgba(0, 0, 0, 0.068);
+    width: 45%;
+    height: 0px;
     background-color: rgb(239, 243, 244);
 }
 

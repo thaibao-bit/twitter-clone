@@ -4,6 +4,7 @@ import NavPage from './pages/navpage';
 import SignIn from './pages/signin';
 import SignInForm from './component/signinform';
 import { Helmet } from 'react-helmet';
+import HomePage from './pages/home';
 function App() {
   return (
     
@@ -13,9 +14,10 @@ function App() {
       </Helmet>
       
       <Routes>
-      <Route path='/navpage' element= {<NavPage/>}></Route>
+      <Route path='/' element= {<NavPage/>}></Route>
       <Route path='/form' element= {<SignInForm/>}></Route>
-      <Route path='/' element= {<SignIn/>}></Route>
+      <Route path='/signin' element= {<SignIn/>}></Route>
+      <Route path='/home' element= {<HomePage/>}></Route>
       </Routes>
     </div>
    
