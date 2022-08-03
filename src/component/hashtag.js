@@ -1,4 +1,5 @@
 import './hashtag.css'
+import EllipsisSvg from './svg/ellipsisSvg'
 
 const HashTag = (props) => {
     return <div className="hashtag">
@@ -8,7 +9,9 @@ const HashTag = (props) => {
             <div className="hash_qeett"><p>{props.qeetts ? props.qeetts : "20000"} Qeett</p></div>
         </div>
         <div className="hash_right">
-        <div className="qeet_ellipsis"></div>
+        <div className="qeet_ellipsis">
+            <EllipsisSvg/>
+        </div>
         </div>
     </div>
 }

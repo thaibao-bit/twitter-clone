@@ -36,6 +36,10 @@ header{
     align-items: flex-end;
 }
 
+.side-bar a {
+    text-decoration: none;
+    color: black;
+}
 
 .black-bird-container{
     width: calc(100% - 48px);

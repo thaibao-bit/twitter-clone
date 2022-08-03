@@ -1,0 +1,29 @@
+.search_bar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_wrapper{
+    background-color: aliceblue;
+    width: 80%;
+    height: 60px;
+    border-radius: 25px;
+    display: flex;
+}
+
+.search_icon{
+    width: 20%;
+    height: 60px;
+    background-color: bisque;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.search_wrapper input{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}

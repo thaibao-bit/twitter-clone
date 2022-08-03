@@ -1,11 +1,15 @@
 
-import Header5 from "../component/header5";
-import Qeett from "../component/qeett";
-import QeettForm from "../component/qeettForm";
+import { Routes, Route } from "react-router-dom";
+import Feeds from "../component/feeds";
+import SearchBar from "../component/searchBar";
 import SideBar from "../component/sideBar";
-import StickyHome from "../component/stickyNavHome";
 import SuggestList from "../component/suggestList";
+import Bookmarks from "./bookmarks";
+import Explore from "./explore";
 import "./home.css";
+import Messages from "./messages";
+import Notifications from "./notifications";
+import Profile from "./profile";
 
 const HomePage = () => {
   return (
@@ -16,74 +20,23 @@ const HomePage = () => {
       <main>
         <div className="main-content">
           <div className="main-left">
-            <StickyHome/>
-            <div className="new-qeet-container">
-              <QeettForm/>
-              
-            </div>
-            <Qeett/>
-              <Qeett/>
-              
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
-              <Qeett/>
+            
+            <Routes>
+              <Route path='' element={<Feeds/>} />
+              <Route path='explore' element={<Explore/>} />  
+              <Route path='notifications' element={<Notifications/>} />  
+              <Route path='messages' element={<Messages/>} />  
+              <Route path='bookmarks' element={<Bookmarks/>} />  
+              <Route path='list' element={<Explore/>} />  
+              <Route path='profile' element={<Profile/>} />   
+            </Routes>
+            
+            
           </div>
 
           <div className="main-right">
           <nav>
-          <Header5 text = "Search"/>
+          <SearchBar/>
             </nav>
             <SuggestList/>
             <SuggestList/>

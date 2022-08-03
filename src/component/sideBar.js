@@ -8,6 +8,7 @@ import HomeSvg from "../component/svg/homesvg";
 import ListsSvg from "../component/svg/listSvg";
 import MessagesSvg from "../component/svg/messageSvg";
 import NotiSvg from "../component/svg/notificationsSvg";
+import { Link } from'react-router-dom'
 
 const SideBar = () => {
     return <div className="side-bar">
@@ -15,14 +16,14 @@ const SideBar = () => {
       <div className="black-bird-container">
         <BlackBird />
       </div>
-      <SideBarItem svg={<HomeSvg />} item="Home" />
-      <SideBarItem svg={<ExploreSvg />} item="Explore" />
-      <SideBarItem svg={<NotiSvg />} item="Notifications" />
-      <SideBarItem svg={<MessagesSvg />} item="Messages" />
-      <SideBarItem svg={<BookmarksSvg />} item="Bookmarks" />
-      <SideBarItem svg={<ListsSvg />} item="Notifications" />
-      <SideBarItem svg={<ProfileSvg />} item="Profile" />
-      <SideBarItem svg={<EllipsisSvg />} item="More" />
+      <Link to=''> <SideBarItem svg={<HomeSvg />} item="Home" /> </Link>
+      <Link to='explore'> <SideBarItem svg={<ExploreSvg />} item="Explore" /> </Link>
+      <Link to='notifications'> <SideBarItem svg={<NotiSvg />} item="Notifications" /> </Link>
+      <Link to='messages'> <SideBarItem svg={<MessagesSvg />} item="Messages" /> </Link>
+      <Link to='bookmarks'> <SideBarItem svg={<BookmarksSvg />} item="Bookmarks" /> </Link>
+      <Link to='notifications'> <SideBarItem svg={<ListsSvg />} item="Notifications" /> </Link>
+      <Link to='profile'> <SideBarItem svg={<ProfileSvg />} item="Profile" /> </Link>
+      <Link to='more'> <SideBarItem svg={<EllipsisSvg />} item="More" /> </Link>
       <div class="blue-btn">Qeett now</div>
     </div>
 

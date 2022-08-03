@@ -1,4 +1,5 @@
 import './qeett.css'
+import EllipsisSvg from './svg/ellipsisSvg'
 const Qeett = () => {
     return <div className="qeet">
         <div className="qeet_avatar"></div>
@@ -9,7 +10,9 @@ const Qeett = () => {
                 <div className="account_info">.    @user123</div>
                 <div className="time_info">.  3 B years ago</div>
             </div>
-            <div className="qeet_ellipsis"></div>
+            <div className="qeet_ellipsis">
+                <EllipsisSvg/>
+            </div>
             </div>
             <div className="qeet_text">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat possimus quidem inventore, quod, ipsa sapiente cupiditate laboriosam dolores atque dolorem aliquid delectus expedita ipsum quos dolorum voluptate, cum quibusdam dignissimos.</p>
