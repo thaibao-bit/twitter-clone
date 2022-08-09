@@ -11,6 +11,7 @@ const Notifications = () => {
         display:flex;
         flex-direction:row;
         align-items: center;
+        justify-content:center;
 `
     const NavItem = styled.div`
         display:flex;
@@ -26,8 +27,9 @@ const Notifications = () => {
         }
     `
     const Item = styled.div`
-    height: 100%;
+        height: 100%;
         border-bottom:3px solid #1D9BF0;
+       
     `
     const NotiWrapper = styled.div`
         height: 100px;
@@ -41,6 +43,9 @@ const Notifications = () => {
             cursor: pointer;
             background-color: #E7E7E8;
         }
+         & p {
+            margin: 0 16px;
+         }
     `
 
    

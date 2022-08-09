@@ -7,7 +7,7 @@ const SideBarItem = (props) => {
     <div className="icon-container">
         {props.svg}
         </div> 
-        <div>{props.item}</div>
+        <span className='item-option'>{props.item}</span>
         </div>
         </div>
 }

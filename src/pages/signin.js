@@ -1,10 +1,17 @@
 import { useState } from 'react'
+import { useNavigate } from "react-router-dom"
 import BlackBird from '../component/blackbirdsvg'
 import SignInForm from '../component/signinform'
 import './signin.css'
 
 const SignIn = () => {
     const [showSignIn, setShowSignIn] = useState(false)
+
+
+    const navigate = useNavigate()
+    const handleLogin = () => {
+        navigate('/home')
+    }
     return <>
     <div className='main'>
        
@@ -23,10 +30,10 @@ const SignIn = () => {
                 <span class="header3-text">
                     Join Qitter today.
                 </span>
-                <div class="login-btn">
+                <div class="login-btn" onClick={handleLogin}>
                     Sign in with Doodle
                 </div>
-                <div class="login-btn">
+                <div class="login-btn" onClick={handleLogin}>
                     Sign up with PineApple
                 </div>
                 <div class="divider-or">
@@ -35,7 +42,7 @@ const SignIn = () => {
                     <div class="divider-side"></div>
                 </div>
 
-                <div class="login-btn blue-login" >
+                <div class="login-btn blue-login" onClick={()=>setShowSignIn(true)}>
                     Sign up with phone or email
                 </div>
                 <div class="terms-of-service">

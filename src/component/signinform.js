@@ -1,7 +1,13 @@
 import BlackBird from './blackbirdsvg'
+import { useNavigate } from "react-router-dom"
 import './signinform.css'
 
 const SignInForm = (props) => {
+    const navigate = useNavigate()
+    const handleLogin = () => {
+        navigate('/home')
+    }
+
     return <div className="backdrop" onClick={props.onClick}>
        <div className="sign-in-block">
     <div className="sign-in-top">
@@ -29,7 +35,7 @@ const SignInForm = (props) => {
 
         <input className="input-txt" type="text" placeholder="Phone, email or username" name="user" id="user"></input>
 
-        <div className="login-btn black-login" >
+        <div className="login-btn black-login" onClick={handleLogin}>
             Next
         </div>
         <div className="login-btn">

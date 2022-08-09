@@ -6,6 +6,7 @@ import ReqeettSvg from "./svg/reqeettSvg";
 import ShareSvg from "./svg/shareSvg";
 import Video from "./video";
 import styled from "styled-components";
+import { useRef } from 'react'
 const Qeett = () => {
   const Qeet = styled.div`
     display: flex;
@@ -129,6 +130,7 @@ const Qeett = () => {
     color: aqua;
     }
   `
+
   return (
     <Qeet>
       <QeetAvatar>
@@ -155,7 +157,7 @@ const Qeett = () => {
         </QeetText>
         <QeetMedia>
 
-          <Video />
+          <Video/>
          
         </QeetMedia>
         <QeetAction>

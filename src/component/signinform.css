@@ -82,3 +82,29 @@
 .question a:hover {
     text-decoration: underline;
 }
+
+@media only screen and (max-width:700px){
+    .backdrop {
+        width: 100%;
+        height: 100vh;
+        overflow: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 100vh;
+        right: 0;
+    }
+
+    .sign-in-block {
+        min-width: 600px;
+        background-color: rgb(255, 255, 255);
+        z-index: 1;
+        width: 30%;
+        height: 100vh;
+        border-radius: 25px;
+        align-items: stretch;
+        display: flex;
+        flex-direction: column;
+    
+    }
+}
